@@ -1,0 +1,11 @@
+--- #Target and Tasks
+- hosts: all
+  user: root
+  connection: ssh
+
+  tasks:
+    - name: install httpd on amazon linux
+      action: yum name=httpd state=present
+
+      name: start the httpd service
+      action: service name=httpd state=started

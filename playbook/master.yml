@@ -1,0 +1,7 @@
+--- #master ymlfile 
+- hosts: all
+  user: root
+  connection: ssh
+
+  roles: 
+  - web

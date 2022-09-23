@@ -1,0 +1,2 @@
+- name: install apache on amazonlinux
+  action: yum name=httpd state=present
